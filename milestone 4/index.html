@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Milestone 4: Editable Resume Builder By Hafsa Shafique</h1>
+    <form id="resumeForm">
+        <fieldset>
+            
+           <label for="profile picture">Profile picture:</label>
+           <input type="file" id="profilepicture" name="profile picture" accept="image/*" required>
+
+            <legend>Personal Information</legend>
+            <label for="Name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+            <label for="linkedIn"> linkedIn:</label>
+            <input type="linkedIn" id="linkedIn" placeholder="Enter your linkedIn account" required>
+
+         </fieldset>
+<fieldset>
+    <legend>Academic Qualification</legend>
+    <textarea id="Academic Qualification" placeholder="Enter your Academic Qualification" rows="4" required></textarea><br>
+</fieldset>
+<fieldset>
+    <legend>Experience</legend>
+    <textarea id="experience" placeholder="Enter your experience" rows="4" required></textarea><br>
+</fieldset>
+<fieldset>
+    <legend>Skills</legend>
+    <textarea id="skills" placeholder="Enter your skills" rows="4" required></textarea><br>
+</fieldset>
+<fieldset>
+    <legend>Achievements</legend>
+    <textarea id="Achievements" placeholder="Enter your Achievements" rows="4" required></textarea><br>
+</fieldset>
+<button type="submit">Generate Resume Below</button>
+</form>
+
+<div id="ResumeOutput">
+    <!--Resume will be generated below-->
+</div>
+<script src="script.js"></script>
+</body>
+</html>
